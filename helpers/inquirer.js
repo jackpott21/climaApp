@@ -120,7 +120,7 @@ const mostrarListadoChecklist = async( tareas = [] ) => {
     const choices = tareas.map( (tarea, i) => {
 
         const idx = `${i + 1}.`.green;
-
+        
         return {
             value: tarea.id,
             name:  `${ idx } ${ tarea.desc }`,
